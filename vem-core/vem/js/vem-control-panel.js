@@ -10,7 +10,7 @@
 
   var config = {
     led: {
-      folder: '../../vem-core/vem/img/',
+      folder: vem.lib_path + "/vem/img/",
       src: {
         red:    'alert-red.gif',
         orange: 'alert-orange.png',

@@ -16,6 +16,8 @@ vem = {
     scale:     5             // Don't change this! 
   },
   
+  //Important: this is the relative path to the vem_core folder as seen by index.html 
+  lib_path: '../../vem-core',
   
   refresh: {
     summary_ms: 500,  // how often (in milliseconds) summary updates are loaded and rendered
