@@ -1,0 +1,53 @@
+/*  global.css
+ *  ==========
+ *
+ *  Contains rules for elements that appear in both the summary and vote view.
+ *
+ */
+
+
+.vem-top-bar {
+	height:10px;
+}
+
+.vem-navbar {
+	margin-top:5px;
+	margin-bottom:8px;
+	background-color: white;
+}
+
+.vem-navbar img{
+  height: 60px;
+}
+
+.vem-main-banner {
+  background-color: #EBFAEB;
+  color: gray;
+  border-bottom: 1px solid #DDD;
+}
+
+.vem-footer {
+  text-align: center;
+}
+
+.vem-footer img {
+  height: 34px;
+  padding-left: 30px;
+}
+
+/* Progress bars */
+
+.progress {
+	min-width:100px;
+	height:30px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.progress .progress-bar {
+	font-size:   16px;
+	line-height: 32px;
+}
+
+
+

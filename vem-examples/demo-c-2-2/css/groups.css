@@ -1,0 +1,45 @@
+/* 
+ *  Groups 
+ */
+
+.vem-groups-table {
+  margin: 40px auto 20px auto;
+}
+
+.vem-groups-table td {
+  padding: 10px;
+}
+
+.vem-groups-table .badge {
+  color: #fff;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+/* group-1 */
+.vem-groups-table td.vem-group-1 .badge,
+ tr.vem-group-1 .label-default,
+ tr.vem-group-1 .progress-bar {
+  background-color:#77b5d7;
+}
+
+/* group-2 */
+.vem-groups-table td.vem-group-2 .badge,
+ tr.vem-group-2 .label-default,
+ tr.vem-group-2 .progress-bar {
+  background-color:#217daf;
+}
+
+/* group-3 */
+.vem-groups-table td.vem-group-3 .badge,
+ tr.vem-group-3 .label-default,
+ tr.vem-group-3 .progress-bar {
+  background-color:#1bbf67;
+}
+
+/* group-4 */
+.vem-groups-table td.vem-group-4 .badge,
+ tr.vem-group-4 .label-default,
+ tr.vem-group-4 .progress-bar {
+  background-color:#097c3e;
+}

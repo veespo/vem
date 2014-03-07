@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VEM Demo B-2-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="../../vem-core/external/css/bootstrap.css" rel="stylesheet">
+    <link href="../../vem-core/external/css/sticky-footer.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/summary.css" rel="stylesheet">
+    <link href="css/votes.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+  
+  <div id="wrap">
+  
+  <div class="vem-top-bar"></div>
+  
+  <div class="navbar vem-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header" id='vem-back-button'>
+          <img src="../../vem-core/vem/img/vem-logo.png" alt="...">
+        </div>
+			  <div class="nav navbar-nav navbar-right" id='vem-indicator'></div>
+      </div>
+    </div>
+  
+   <!-- summary page -->
+   <div id='vem-summary-page'>
+  
+      <div class="jumbotron vem-main-banner">
+        <div class="container">
+        	<div class="row">
+        	
+        	  <div class="col-md-5">
+  			       <h2 class="vem-main-title">Veespo Event Manager</h2>
+  			       <h3><strong>Demo b-2-1</strong> : bootstrap, groups, 2 summary tables, 1 tag table</h3>
+  			       <h4>Use demo code <strong>QHEY</strong> to vote using Veespo Lite</h4>
+  			       <p>Click on a subject to switch to vote view</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container">
+        <div class="raw">
+        
+          <div class="col-md-6 left-table-container">
+            <table class="table vem-summary-table" id="vem-summary-table-left"></table>
+          </div>
+          
+          <div class="col-md-6">
+            <table class="table vem-summary-table" id="vem-summary-table-right"></table>
+          </div>
+          
+  	    </div>
+  	  </div> 
+  	  
+    </div><!-- summary page  -->   
+     
+    <!-- vote page  --!>   
+    <div id="vem-vote-page" style="display:none" >
+      
+     <div class='jumbotron vem-main-banner'>
+       <div class='container'>
+         <div class='raw'>
+           <img class='vem-logo' id='vem-rate-logo'  alt='...' />
+           <div class='col-md-7'>
+             <h2>                         <span id='vem-rate-item-1'</span></h2>
+             <h3><strong>INFO:  </strong> <span id='vem-rate-item-2'</span></h3>
+             <p>Max tags set to <span id='vem-rate-item-3'></span> (see settings.js)</p>
+             <p>Click on the spinner to reveal the voting results</p>
+             <p>Click on the VEM logo to return to summary view</p>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+     <div class='container'>
+     
+     <table class="vem-vote-overall-table">
+       <tr>
+         <td><h2 class='text-center'>Voters  <span class='label label-default' id='vem-rate-users'  ></span></h2></td>
+         <td><h2 class="text-center">Overall <span class='label label-default' id='vem-rate-overall'></span></h2></td>
+       </tr> 
+     </table>
+      
+     <div class="raw">
+       <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1" id="vem-vote-anchor"></div>
+     </div>  
+    
+   </div>   
+   </div> <!-- vote page  -->      
+    
+   </div>  <!-- wrap  -->    
+      
+   <div id="footer">
+     <div class="container vem-footer">
+        <img src="../../vem-core/vem/img/powered-by-veespo.png" />
+     </div>
+   </div>
+    
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://code.jquery.com/jquery.js"></script>
+   <script src="../../vem-core/vem/vendors/picomodal.js"></script>  
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="../../vem-core/external/js/bootstrap.min.js"></script>
+   <script src="../../vem-core/external/js/holder.js"></script>
+   <script src="../../vem-core/external/js/bcrypt.js"></script>
+  
+   <!-- Note: loader order important below  --!>   
+   
+   <!-- Customizable files   --!>   
+   <script src="js/settings.js"></script>
+   <script src="js/info.js"></script>
+   <script src="js/render-summary.js"></script>
+   <script src="js/render-vote.js"></script> 
+   
+   <!-- Library files   --!> 
+   <script src="../../vem-core/vem/js/vem-control-panel.js"></script> 
+   <script src="../../vem-core/vem/js/vem-core.js"></script> 
+  
+
+  </body>
+</html>

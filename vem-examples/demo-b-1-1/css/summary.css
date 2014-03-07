@@ -1,0 +1,47 @@
+/*  summary.css
+ *  ===========
+ *
+ *  Contains rules for elements that appear only in the summary view (one table)
+ *
+ */
+
+
+#vem-summary-page .vem-main-banner {
+  padding-top:   15px;
+  padding-bottom:20px;
+  margin-bottom: 30px;
+}
+
+#vem-summary-page .vem-main-banner h2{
+  margin-bottom: 4px;
+}
+
+#vem-summary-page .vem-main-banner h3{
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+#vem-summary-page .vem-main-banner h4{
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+#vem-summary-page .vem-main-banner p{
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0;
+}
+
+#vem-summary-page .vem-summary-table-container{
+  padding: 0 100px 0 100px;
+}
+
+#vem-summary-page .vem-summary-table {
+	font-size:160%;
+	font-weight:200;
+}
+
+#vem-summary-page .vem-summary_table thead {
+	font-size:90%;
+}
+

@@ -1,0 +1,61 @@
+/*  votes.css
+ *  =========
+ *
+ *  Contains rules for elements that appear in the votes view with two tag tables
+ *
+ */
+ 
+#vem-vote-page .vem-main-banner {
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-bottom: 0;
+}
+
+#vem-vote-page .vem-main-banner h2{
+  margin-bottom: 8px;
+}
+
+#vem-vote-page .vem-main-banner h3{
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+#vem-vote-page .vem-main-banner p{
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0;
+}
+
+#vem-vote-page .vem-logo {
+  float: right;
+  width: 200px;
+}
+
+#vem-vote-page .vem-vote-overall-table {
+  margin: 20px auto 40px auto;
+}
+
+#vem-vote-page .vem-vote-overall-table td {
+  padding: 0 30px 0 30px;
+}
+
+#vem-vote-page .vem-vote-table {
+  font-size:   160%;
+  font-weight: 200;
+}
+
+#vem-vote-page .vem-vote_table thead {
+  font-size:90%;
+}
+
+/* Mods for two tag tables */
+
+#vem-vote-anchor-left {
+  padding-right: 20px;
+  border-right: 1px solid #DDD;
+}
+
+.vem-spinner {
+  position: relative;
+  left: -50%;
+}
