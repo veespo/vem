@@ -306,7 +306,7 @@ if (!window.$ || !window.$.ajax){
     var pos = 0;
     for (var i=0; i<_targets.length; i++){
       if (!data.targets[_targets[i]]){
-        vem.cp.warning('Summary', 'Unknown target: ' + targets[i]);
+        vem.cp.warning('Summary', 'Unknown target: ' + _targets[i]);
       } else {
         fn({
           pos:        ++pos,
@@ -384,7 +384,7 @@ if (!window.$ || !window.$.ajax){
     var pos = 0;
     for (var i=0; i<_tags.length; i++){
       if (!data.tags[_tags[i]]){
-        vem.cp.warning('Vote', 'Unknown tag: ' + tag[i]);
+        vem.cp.warning('Vote', 'Unknown tag: ' + _tags[i]);
       } else {
         if (!vem.config.max_tags || pos < vem.config.max_tags){
           fn({

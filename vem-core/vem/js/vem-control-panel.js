@@ -272,7 +272,11 @@
   };
 
   var warning = function(mode, msg) {
-    alert('implement warning');
+    if (console.warning){
+      console.warning(mode, msg);
+    } else {
+      console.log('WARN', mode, msg);
+    }
   };
 
   var ajax_error = function(jqXHR, textStatus, errorThrown) {
