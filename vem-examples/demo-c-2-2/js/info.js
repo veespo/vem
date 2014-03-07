@@ -1,6 +1,6 @@
 (function(){
   
-  vem.info.display_order = ['t1','t2','t3','t4','t5','t6','t7','t8','t9','t10','t11','t12'];
+  vem.info.display_order = ['t1_','t2','t3','t4','t5','t6','t7','t8','t9','t10','t11','t12'];
   
   vem.info.db = {
       t1:  ['A', 'group-1', 'Local info on Subject A (see info.js)'],

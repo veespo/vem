@@ -272,8 +272,8 @@
   };
 
   var warning = function(mode, msg) {
-    if (console.warning){
-      console.warning(mode, msg);
+    if (console.warn){
+      console.warn(mode, msg);
     } else {
       console.log('WARN', mode, msg);
     }
