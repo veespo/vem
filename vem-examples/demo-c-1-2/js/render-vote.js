@@ -16,7 +16,8 @@
    */
   var init = function(){
     console.log("vote.init()");
-    loader = $("<img class='vem-spinner' style='cursor:pointer; height:200px; padding-left:180px;' src='../../vem-core/vem/img/veespo-spinning.gif' />");
+    loader = $("<img class='vem-spinner' style='cursor:pointer; height:200px; padding-left:180px;' />");
+    loader.attr('src', vem.lib_path + '/vem/img/veespo-spinning.gif');
     anchors = {
       left:  $("#vem-vote-anchor-left"),
       right: $("#vem-vote-anchor-right"), 
