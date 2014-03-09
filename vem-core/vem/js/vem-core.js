@@ -72,7 +72,7 @@ if (!window.$ || !window.$.ajax){
           data.tags_az.push(reply.data.tags[i].tag);
           data.tags[reply.data.tags[i].tag] = reply.data.tags[i];
         }
-        console.log(vem);
+        
         if (vem.callbacks.init){
           vem.callbacks.init(); 
         }
@@ -80,6 +80,17 @@ if (!window.$ || !window.$.ajax){
       error:    vem.cp.ajax_error,
       dataType: 'jsonp'
     });
+  };
+  
+  
+  var check_labels = function(labels){
+	for (var tag in labels){
+      if (!data.tags[tag]){
+    	console.log("New Tag", labels[tag].label);
+    	data.tags[tag] = labels[tag];
+	    data.tags_az.push(tag);       // not in correct order, pazienza
+      }
+	}  
   };
   
   var voting_is_on = function(){
@@ -202,9 +213,9 @@ if (!window.$ || !window.$.ajax){
     $.ajax({
       url:     url("/v1/average/category/:cat/target/:target"),
       data:    { 
-        lang:   vem.config.lang,
         cat:    vem.config.category,
-        target: data.target
+        target: data.target,
+        labels: vem.config.lang,
       },
       success: function(reply){
         if (mode != 'VOTE'){
@@ -215,6 +226,7 @@ if (!window.$ || !window.$.ajax){
         }
         vem.cp.status('green');
         data.averages = reply.data.averages;
+        check_labels(reply.data.labels);
         if (events.vote++ > vem.max_events.vote){
           vem.cp.status('orange');
           console.log("max_events.vote", vem.max_events.vote, "reached");
