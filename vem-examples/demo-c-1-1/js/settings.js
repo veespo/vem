@@ -36,7 +36,9 @@ vem = {
       vem.callbacks.summary.init();  // one-time set-up of summary page
       vem.callbacks.vote.init();     // one-time set-up of vote page
       vem.api.mode.summary();        // commence summary monitoring and rendering
-    }
+    },
+    summary: {},
+    vote:    {}
   },
   
   // VEM will NOT start if it cannot find all of the following HTML ids
