@@ -91,7 +91,7 @@
           html += '<div id="dialog-status-log" style="color:#00ff00">OK</div>';
 
         } else {
-          // html += '<div id="dialog-status-log" style="color:#ff0000">' + state.message_error + '</div>';
+          html += '<div id="dialog-status-log" style="color:#ff0000">' + state.message_error.substr(0,200) + '</div>';
 
         }
       }
